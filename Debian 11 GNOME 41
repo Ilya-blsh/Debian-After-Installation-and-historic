@@ -1,0 +1,29 @@
+Добавить репозитории
+
+deb http://deb.debian.org/debian/ stable main contrib non-free
+deb http://deb.debian.org/debian/ sid main contrib non-free
+deb http://deb.debian.org/debian/ experimental main contrib non-free
+
+Войти в режим от рута:
+
+su -
+
+Перечитать и установить Гном 40:
+
+apt-get update
+
+apt-get -t experimental install gnome-shell gnome-session
+
+apt-get -t experimental upgrade
+
+Отвечать на все вопросы Yes
+
+Перезагрузка:
+
+reboot
+
+Полное обновление системы:
+
+apt-get dist-upgrade
+
+Готово !
